@@ -13,9 +13,15 @@ function hide() {
 function show() {
   $('.jumbotron').slideDown();
 }
+
+
+
+
 $(document).ready(function() {
 $('h1').on('mouseenter', highlight);
 $('.jumbotron').on('mouseenter', highlight);
 $('h1').on('mouseleave', unhighlight);
 $('.jumbotron').on('mouseleave', unhighlight);
+$('.hide-jumbotron').on('click', hide);
+$('.show-jumbotron').on('click', show);
 });
